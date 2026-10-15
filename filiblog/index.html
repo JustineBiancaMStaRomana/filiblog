@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>My Profile :D</title>
+</head>
+
+<body onload="typeout()">
+    
+    <section id="bar">
+        <img id="pfp" src="assets/robbie.png">
+        <h1 id="name"></h1>
+        <p>I-click ang mga libro para basahin ang post</p><br>
+            <hr><br><br>
+            <a href="https://en.wikipedia.org/wiki/Yesteryear_(novel)">Yesteryear ni Caro Claire Burke</a> <br><br>
+            <a href="https://en.wikipedia.org/wiki/Dungeon_Crawler_Carl">Dungeon Crawler Carl ni Matt Dinniman</a> <br><br>
+            <a href="#">something ni something</a> <br><br><br>
+            <hr><br>
+    </section>
+
+    <div id="content">
+
+        <section class="shelfsec">
+            <img src="shelf.jpg" class="shelf">
+            <section class="booksec">
+                <img src="yesteryear.jpg" class="book" onclick="changeContent('yesteryear')">
+                <img src="dcc.jpg" class="book" onclick="changeContent('dcc')">
+                <img src="tbd.jpg" class="book" onclick="changeContent('tbd')">
+            </section>
+        </section>
+
+        <div id="post1" class="post hidden">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

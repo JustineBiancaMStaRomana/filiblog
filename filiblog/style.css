@@ -1,0 +1,166 @@
+:root {
+    height: 100%;
+
+    --bg: #1a1a2e;
+    --text: #111;
+    --accent: white;
+
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: jetbrains;
+    src: url(JetBrainsMono-Regular.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0.5%;
+    box-sizing: border-box;
+
+    font-family: jetbrains;
+
+    transition: all 0.5s ease-in;
+}
+
+body {
+    padding: 20px;
+    height: 100%;
+
+    background-color: #111111be;
+
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-blend-mode: multiply;
+
+    font-family: Arial, sans-serif;
+}
+
+section {
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    min-height: 25em;
+
+    background-color: white;
+}
+
+section.shelfsec{
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    display: flex;
+    justify-content:center;
+
+    min-height: 25em;
+    background-color:rgba(0, 0, 0, 0.0);
+}
+
+img.shelf{
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+
+}
+
+p {
+    padding: 1%;
+    padding: 0;
+    font-size: 1.5em;
+}
+
+a {
+    padding: 0;
+
+    color: #111;
+
+    font-size: 1.5em;
+}
+
+h2 {
+    margin-bottom: 10px;
+    padding: 0.2em;
+
+    color: #1a1a2e;
+    
+    font-size: 2em;
+}
+
+button {
+    padding: 10px 20px;
+
+    background-color: #c94f45;
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+hr {
+    padding:0;
+
+    border:0.2em solid black;
+}
+
+#content {
+    position: relative;
+    width: 70%;
+    left: 5%;
+}
+
+#bar {
+    margin: 2%;
+    position: fixed;
+    height: 90%;
+    width: 20%;
+    top: 0;
+    right: 0;
+
+    border-radius: 5%;
+
+    text-align: center;
+}
+
+#pfp {
+    max-width: 80%;
+    border-radius: 8px;
+}
+
+.post{
+    background-color: antiquewhite;
+    transition: transform 0.5s ease;
+    transform-origin: top center
+}
+
+.booksec{
+    padding: 0;
+
+    min-width: 80%;
+    
+    position: absolute;
+    display: flex;
+    top: 15%;
+
+    justify-content: space-around;
+
+    height: inherit;
+
+    background-color:rgba(0, 0, 0, 0);
+}
+
+.book{
+    max-height: 30em;
+    
+}
+
+#post1{
+    position: absolute;
+}
+
+.hidden{
+    transform: scaleY(0.001);
+    transform-origin: top center;
+}
