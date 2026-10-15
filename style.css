@@ -55,7 +55,7 @@ section.shelfsec{
     justify-content:center;
 
     min-height: 20em;
-    background-color:rgba(0, 0, 0, 0.0);
+    background-color:rgba(0, 0, 0, 0);
 }
 
 img.shelf{
@@ -139,20 +139,24 @@ hr {
     padding: 0;
 
     min-width: 80%;
+    overflow: hidden;
     
     position: absolute;
     display: flex;
-    top: 15%;
-
+    top: 12%;
+    
     justify-content: space-around;
 
-    height: inherit;
+    height: 10%;
 
     background-color:rgba(0, 0, 0, 0);
 }
 
 .book{
-    max-height: 21em;
+    height: 90%;
+    width: 100%; 
+
+    object-fit: contain;
     
 }
 
