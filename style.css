@@ -95,6 +95,7 @@ button {
     color: white;
 
     border: none;
+    border-radius: 0.5em;
 
     cursor: pointer;
 }
@@ -131,7 +132,7 @@ hr {
 
 .post{
     background-color: antiquewhite;
-    transition: transform 0.5s ease;
+    transition: transform 0.4s ease;
     transform-origin: top center
 }
 
